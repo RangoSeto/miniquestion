@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-bottom: 70px;
+}
+
+h2{
+    font-family: 'DynaPuff', cursive;
+    font-size: 50px;
+
+    transform: translate(-150px);
+}
+
+.numbercon{
+    width: 90%;
+    text-align: center;
+
+    margin: auto;
+
+}
+
+.numbers{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+    border: 2px solid burlywood;
+    padding: 10px 15px;
+
+    margin-right: 20px;
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.numbers:hover{
+    box-shadow: 2px 0 15px #f27005;
+}
+
+a::before{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: #c4f3f5;
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+    transition: all .5s;
+}
+
+a:hover::before{
+    transform: scaleY(100%);
+}
+
+.modal{
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* .active{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    
+    position: relative;
+}
+
+.active::before{
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+    display: block;
+    width: 80%;
+    height: 70%;
+    background-color: #ddd;
+    box-shadow: 2px 0 200px #000;
+    text-align: center;
+
+    position: absolute;
+    left: 3%;
+    top: -30%;
+
+    z-index: 3;
+}
+
+.numbercon .active{
+    text-align: center;
+
+    box-shadow: none;
+    border: none;
+} */
+
+/* .modal-ku {
+    width: 750px;
+    margin: auto;
+  } */
